@@ -22,12 +22,12 @@ class _RegisterPageState extends State<RegisterPage> {
         centerTitle: true,
         leading: IconButton(
             onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => const LoginPage()));
             },
             icon: Image.asset(
               "assets/ic-back.png",
-              width: 30,
-              height: 30,
+              width: 20,
+              height: 20,
             )),
       ),
       body: ListView(

@@ -26,8 +26,8 @@ class _LoginPageState extends State<LoginPage> {
             },
             icon: Image.asset(
               "assets/ic-back.png",
-              width: 30,
-              height: 30,
+              width: 20,
+              height: 20,
             )),
       ),
       body: ListView(
@@ -196,7 +196,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               GestureDetector(
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => RegisterPage(),));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const RegisterPage(),));
                 },
                 child: Text(
                   "Daftar",
