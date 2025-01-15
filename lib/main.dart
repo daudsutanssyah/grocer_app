@@ -1,5 +1,4 @@
-import 'package:egrocer_app/pages/beranda_page.dart';
-import 'package:egrocer_app/pages/profil_page.dart';
+import 'package:egrocer_app/pages/profil_saya.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -34,7 +33,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: ProfilPage(),
+      home: ProfilSaya(),
     );
   }
 }

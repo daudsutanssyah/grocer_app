@@ -1,3 +1,4 @@
+import 'package:egrocer_app/pages/profil_saya.dart';
 import 'package:egrocer_app/themes/themes.dart';
 import 'package:flutter/material.dart';
 
@@ -53,10 +54,10 @@ class ProfilPage extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 40), 
+          const SizedBox(height: 40), 
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Container(
+            child: SizedBox(
               width: double.infinity,
               height: 80,
               child: Card(
@@ -64,19 +65,20 @@ class ProfilPage extends StatelessWidget {
                 child: Center(
                   child: ListTile(
                     leading: Icon(Icons.person_4_outlined , size: 35, color: primaryColor,),
-                    title: Text("Akun Saya", style: TextStyle(color: primaryColor , fontSize: 16),),
+                    title: Text("Profil Saya", style: TextStyle(color: primaryColor , fontSize: 16),),
                     trailing: Icon(Icons.arrow_forward_ios , color: primaryColor,),
                     onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => ProfilSaya()));
                     },
                   ),
                 ),
               ),
             ),
           ),
-          SizedBox(height: 5,),
+          const SizedBox(height: 5,),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Container(
+            child: SizedBox(
               width: double.infinity,
               height: 80,
               child: Card(
@@ -93,10 +95,10 @@ class ProfilPage extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 5,),
+          const SizedBox(height: 5,),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Container(
+            child: SizedBox(
               width: double.infinity,
               height: 80,
               child: Card(
@@ -113,10 +115,10 @@ class ProfilPage extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 5,),
+          const SizedBox(height: 5,),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Container(
+            child: SizedBox(
               width: double.infinity,
               height: 80,
               child: Card(
@@ -138,7 +140,6 @@ class ProfilPage extends StatelessWidget {
     ),
   ),
 ),
-
     );
   }
 }
